@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Your recovery codes:</h2>
+<ul>
+    {% for code in codes %}
+        <li>{{ code }}</li>
+    {% endfor %}
+</ul>
+<a href="/dashboard">Back</a>
+{% endblock %}

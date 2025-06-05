@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>{% if setup %}Scan QR for 2FA Setup{% else %}Enter 2FA Code{% endif %}</h2>
+
+{% if setup %}
+    <img src="data:image/png;base64,{{ img_b64 }}"><br>
+    After scanning, <a href="/dashboard">click here</a> to continue.
+{% else %}
+<form method="post">
+    <label>Authenticator Code: <input name="token"></label><br>
+    <label>OR Recovery Code: <input name="recovery"></label><br>
+    <button type="submit">Verify</button>
+</form>
+{% endif %}
+{% endblock %}
