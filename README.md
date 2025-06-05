@@ -18,16 +18,16 @@ Arhitectura
 -QR Code: Generat automat pentru scanare in aplicatii de tip Authenticator
 
 mfa/
-├── 2FA.py                    - Aplicatia principala Flask  
-├── instance/users.db         - Baza de date locala SQLite  
-├── static/style.css          - Fisier CSS  
-└── templates/                - Sabloane HTML  
-    ├── base.html  
-    ├── dashboard.html  
-    ├── login.html  
-    ├── recovery.html  
-    ├── register.html  
-    └── two_factor.html  
+-2FA.py                    - Aplicatia principala Flask  
+-instance/users.db         - Baza de date locala SQLite  
+-static/style.css          - Fisier CSS  
+-templates/                - Sabloane HTML  
+    -base.html  
+    -dashboard.html  
+    -login.html  
+    -recovery.html  
+    -register.html  
+    -two_factor.html  
 
 Instalare si Rulare
     
